@@ -115,7 +115,6 @@ Here is the deployed app link [${answers.title}](${answers.deployed}).
 ## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
-* [Credits](#credits)
 * [License](#license)
 * [Contributing](#contributing)
 * [Tests](#tests)

@@ -6,7 +6,6 @@ Here is the deployed app link [Readme Generator](https://haroon-dev13.github.io/
 ## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
-* [Credits](#credits)
 * [License](#license)
 * [Contributing](#contributing)
 * [Tests](#tests)
