@@ -39,28 +39,26 @@ const promptUser = () =>
       type: 'input',
       name: 'title',
       message: 'What is your title of the project?',
+      validate: 'validateInput',
     },
-    // {
-    //   type: 'input',
-    //   name: 'description',
-    //   message: 'What is description of the project?',
-        // validate: validateInput,
-    // },
-    // {
-    //   type: 'input',
-    //   name: 'installation',
-    //   message: 'Waht are Installation requirements of the project?',
-    // },
-    // {
-    //   type: 'input',
-    //   name: 'usage',
-    //   message: 'What is usage of project?',
-    // },
-    // {
-    //   type: 'input',
-    //   name: 'license',
-    //   message: 'Enter your License.',
-    // },
+    {
+       type: 'input',
+       name: 'description',
+       message: 'What is description of the project?',
+       validate: 'validateInput',
+    },
+    {
+      type: 'input',
+      name: 'installation',
+      message: 'Waht are Installation requirements of the project?',
+      validate: 'validateInput',
+    },
+    {
+      type: 'input',
+      name: 'usage',
+      message: 'What is usage of project?',
+      validate: 'validateInput',
+    },
     {
         type: "list",
         name: "license",
@@ -76,26 +74,30 @@ const promptUser = () =>
         ],
         validate: validateInput,
     },
-    // {
-    //     type: 'input',
-    //     name: 'contributing',
-    //     message: 'Would you like other developers to contribute on it, Enter details.',
-    //   },
-    //   {
-    //     type: 'input',
-    //     name: 'tests',
-    //     message: 'How to run tests?.',
-    //   },
-    //   {
-    //     type: 'input',
-    //     name: 'githubName',
-    //     message: 'Enter your gitHub username?',
-    //   },
-    //   {
-    //     type: 'input',
-    //     name: 'email',
-    //     message: 'Please enter your email.',
-    //   },
+    {
+        type: 'input',
+        name: 'contributing',
+        message: 'Would you like other developers to contribute on it, Enter details.',
+        validate: 'validateInput',
+      },
+      {
+        type: 'input',
+        name: 'tests',
+        message: 'How to run tests?.',
+        validate: 'validateInput',
+      },
+      {
+        type: 'input',
+        name: 'githubName',
+        message: 'Enter your gitHub username?',
+        validate: 'validateInput',
+      },
+      {
+        type: 'input',
+        name: 'email',
+        message: 'Please enter your email.',
+        validate: 'validateInput',
+      },
   ]);
 
 // let badge = getLicense(answers.choices);
