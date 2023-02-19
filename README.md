@@ -1,6 +1,6 @@
-# 2nd pro
+# mt new pro <p class="text-right">[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)</p>
 ## Description
-nothing
+undefined
 ## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
@@ -21,6 +21,8 @@ undefined
 ## Credits
 
 ## License
+Copyright (c) 2023 [![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0).
+
 
 ## Contributing
 undefined
@@ -29,5 +31,5 @@ undefined
 undefined
 
 ## Questions
-[haroon-dev13](https://github.com/haroon-dev13)   
-If any wants to reach me please send your email at mharoonbutt13@gmail.com
+[undefined](https://github.com/undefined)   
+If you have any question please reach me out at undefined
