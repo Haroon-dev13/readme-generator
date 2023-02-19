@@ -46,6 +46,11 @@ const promptUser = () =>
         name: 'githubName',
         message: 'Enter your gitHub username?',
       },
+      {
+        type: 'input',
+        name: 'email',
+        message: 'Please enter your email.',
+      },
   ]);
 
 const generateMarkdown = (answers) =>
@@ -80,7 +85,8 @@ ${answers.contributing}
 ${answers.tests}
 
 ## Questions
-${answers.questions}`;
+[${answers.githubName}](https://github.com/${answers.githubName})   
+If any wants to reach me please send your email at ${answers.email}`;
 
 promptUser()
   .then((answers) => writeFileAsync('README.md', generateMarkdown(answers)))
