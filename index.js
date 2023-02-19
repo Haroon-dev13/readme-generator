@@ -39,25 +39,31 @@ const promptUser = () =>
       type: 'input',
       name: 'title',
       message: 'What is your title of the project?',
-      validate: 'validateInput',
+      validate: validateInput,
     },
     {
        type: 'input',
        name: 'description',
        message: 'What is description of the project?',
-       validate: 'validateInput',
+       validate: validateInput,
     },
+    {
+        type: 'input',
+        name: 'deployed',
+        message: 'Please enter the deployed application link?',
+        validate: validateInput,
+     },
     {
       type: 'input',
       name: 'installation',
       message: 'Waht are Installation requirements of the project?',
-      validate: 'validateInput',
+      validate: validateInput,
     },
     {
       type: 'input',
       name: 'usage',
       message: 'What is usage of project?',
-      validate: 'validateInput',
+      validate: validateInput,
     },
     {
         type: "list",
@@ -78,36 +84,34 @@ const promptUser = () =>
         type: 'input',
         name: 'contributing',
         message: 'Would you like other developers to contribute on it, Enter details.',
-        validate: 'validateInput',
+        validate: validateInput,
       },
       {
         type: 'input',
         name: 'tests',
         message: 'How to run tests?.',
-        validate: 'validateInput',
+        validate: validateInput,
       },
       {
         type: 'input',
         name: 'githubName',
         message: 'Enter your gitHub username?',
-        validate: 'validateInput',
+        validate: validateInput,
       },
       {
         type: 'input',
         name: 'email',
         message: 'Please enter your email.',
-        validate: 'validateInput',
+        validate: validateInput,
       },
   ]);
-
-// let badge = getLicense(answers.choices);
-// let badgeLogo = "<p>${}</p>";
 
 const generateMarkdown = (answers) =>
 `# ${answers.title}   
 ${getLicense(answers.choices)}
 ## Description
-${answers.description}
+${answers.description}  
+Here is the deployed app link [${answers.title}](${answers.deployed}).
 ## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
@@ -125,7 +129,6 @@ ${answers.usage}
 
 ### View output video
 
-## Credits
 
 ## License
 Copyright (c) 2023 ${getLicense(answers.choices)}.
@@ -138,10 +141,10 @@ ${answers.contributing}
 ${answers.tests}
 
 ## Questions
-[${answers.githubName}](https://github.com/${answers.githubName})   
+Here is my gitHub link [${answers.githubName}](https://github.com/${answers.githubName})   
 If you have any question please reach me out at ${answers.email}`;
 
 promptUser()
-  .then((answers) => writeFileAsync('README.md', generateMarkdown(answers)))
+  .then((answers) => writeFileAsync('NewREADME.md', generateMarkdown(answers)))
   .then(() => console.log('Successfully wrote to readme file'))
   .catch((err) => console.error(err));
