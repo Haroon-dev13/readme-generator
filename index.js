@@ -14,7 +14,7 @@ function validateInput(value) {
 }
 
 
-// License function and  if/else section here 
+// License function 
 function getLicense(value) {
     if (value === "GNU AGPLv3") {
         return "[![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)";
@@ -125,7 +125,6 @@ ${answers.installation}
 
 ## Usage
 ${answers.usage}
-
 
 
 ## License
