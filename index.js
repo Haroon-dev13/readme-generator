@@ -126,7 +126,6 @@ ${answers.installation}
 ## Usage
 ${answers.usage}
 
-### View output video
 
 
 ## License

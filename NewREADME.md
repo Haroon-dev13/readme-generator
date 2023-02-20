@@ -17,8 +17,6 @@ To use this Application you should have "node" installed in your system and also
 ## Usage
 To use this application, run the index.js file by using command "node index.js" in terminal. This application asked some question about the project and you have to answer those question and then this will gererate the standard README file.
 
-### View output video
-
 
 ## License
 Copyright (c) 2023 [![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0).
